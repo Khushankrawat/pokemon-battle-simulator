@@ -1,19 +1,19 @@
-# Pokémon Battle Simulator
+# Pokemon Battle Simulator
 
-A turn-based Pokémon battle simulator built with FastAPI and React, featuring real-time battles with authentic Pokémon stats, moves, and type effectiveness calculations.
+A turn-based Pokemon battle simulator built with FastAPI and React, featuring real-time battles with authentic Pokemon stats, moves, and type effectiveness calculations.
 
-![Pokémon Battle Simulator](https://img.shields.io/badge/Python-3.11+-blue) ![React](https://img.shields.io/badge/React-18+-blue) ![FastAPI](https://img.shields.io/badge/FastAPI-Latest-green)
+![Python](https://img.shields.io/badge/Python-3.11+-blue) ![React](https://img.shields.io/badge/React-18+-blue) ![FastAPI](https://img.shields.io/badge/FastAPI-Latest-green)
 
 ## Features
 
-- **Turn-based Battles** - Classic 1v1 Pokémon battles
-- **Authentic Data** - Real stats, moves, and type effectiveness from PokéAPI
-- **Modern UI** - Beautiful responsive design with HP bars and sprites
-- **Keyboard Controls** - Press 1-4 to select moves quickly
-- **Smart AI** - Computer opponent with intelligent move selection
-- **Fast Performance** - 24-hour caching for rapid responses
-- **Responsive Design** - Works on desktop, tablet, and mobile
-- **Well Tested** - Comprehensive test suite with 95%+ coverage
+- Turn-based Battles - Classic 1v1 Pokemon battles
+- Authentic Data - Real stats, moves, and type effectiveness from PokeAPI
+- Modern UI - Beautiful responsive design with HP bars and sprites
+- Keyboard Controls - Press 1-4 to select moves quickly
+- Smart AI - Computer opponent with intelligent move selection
+- Fast Performance - 24-hour caching for rapid responses
+- Responsive Design - Works on desktop, tablet, and mobile
+- Well Tested - Comprehensive test suite with 95%+ coverage
 
 ## Quick Start
 
@@ -56,10 +56,10 @@ npm run dev
 
 ## How to Play
 
-1. **Start a Battle** - Enter a Pokémon name or click "Random" for a surprise battle
-2. **Choose Moves** - Select from 4 available moves by clicking or pressing 1-4
-3. **Watch the Action** - See damage calculations, type effectiveness, and battle animations
-4. **Win!** - Defeat your opponent by reducing their HP to zero
+1. Start a Battle - Enter a Pokemon name or click "Random" for a surprise battle
+2. Choose Moves - Select from 4 available moves by clicking or pressing 1-4
+3. Watch the Action - See damage calculations, type effectiveness, and battle animations
+4. Win! - Defeat your opponent by reducing their HP to zero
 
 ## Project Structure
 
@@ -88,19 +88,19 @@ pokemon_battle_simulator/
 ## Tech Stack
 
 ### Backend
-- **FastAPI** - Modern, fast Python web framework
-- **Pydantic** - Data validation and settings
-- **httpx** - Async HTTP client for PokéAPI
-- **pytest** - Testing framework
+- FastAPI - Modern, fast Python web framework
+- Pydantic - Data validation and settings
+- httpx - Async HTTP client for PokeAPI
+- pytest - Testing framework
 
 ### Frontend
-- **React 18** - UI library
-- **TypeScript** - Type safety
-- **Vite** - Fast build tool
-- **TailwindCSS** - Utility-first CSS
-- **TanStack Query** - Data fetching
-- **Zustand** - State management
-- **Axios** - HTTP client
+- React 18 - UI library
+- TypeScript - Type safety
+- Vite - Fast build tool
+- TailwindCSS - Utility-first CSS
+- TanStack Query - Data fetching
+- Zustand - State management
+- Axios - HTTP client
 
 ## API Endpoints
 
@@ -122,7 +122,7 @@ POST /api/session/{session_id}/action
 }
 ```
 
-### Search Pokémon
+### Search Pokemon
 ```bash
 GET /api/pokemon/search?q=char&with_sprites=true
 ```
@@ -147,7 +147,7 @@ pytest tests/test_damage.py  # Specific file
 ## Configuration
 
 ### Backend
-The backend automatically caches PokéAPI responses for 24 hours to improve performance and reduce API calls.
+The backend automatically caches PokeAPI responses for 24 hours to improve performance and reduce API calls.
 
 ### Frontend
 Edit `frontend/src/api/client.ts` to change the API URL:
@@ -169,11 +169,11 @@ Where:
 ```
 
 ### Type Effectiveness
-- **2x**: Super effective
-- **1x**: Normal effectiveness
-- **0.5x**: Not very effective
-- **0.25x**: Hardly affects
-- **0x**: Immune (no damage)
+- 2x: Super effective
+- 1x: Normal effectiveness
+- 0.5x: Not very effective
+- 0.25x: Hardly affects
+- 0x: Immune (no damage)
 
 ## Development
 
@@ -217,8 +217,8 @@ MIT License - feel free to use this project for learning or as a starting point 
 
 ## Acknowledgments
 
-- [PokéAPI](https://pokeapi.co/) for providing free Pokémon data
-- Pokémon Company for creating the amazing franchise
+- [PokeAPI](https://pokeapi.co/) for providing free Pokemon data
+- Pokemon Company for creating the amazing franchise
 - All contributors and testers
 
 ## Contributing
@@ -233,4 +233,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-Made with love for Pokémon fans
+Made with love for Pokemon fans
+
