@@ -4,18 +4,18 @@ A turn-based Pokémon battle simulator built with FastAPI and React, featuring r
 
 ![Pokémon Battle Simulator](https://img.shields.io/badge/Python-3.11+-blue) ![React](https://img.shields.io/badge/React-18+-blue) ![FastAPI](https://img.shields.io/badge/FastAPI-Latest-green)
 
-## ✨ Features
+## Features
 
-- 🎮 **Turn-based Battles** - Classic 1v1 Pokémon battles
-- 🔥 **Authentic Data** - Real stats, moves, and type effectiveness from PokéAPI
-- 🎨 **Modern UI** - Beautiful responsive design with HP bars and sprites
-- ⌨️ **Keyboard Controls** - Press 1-4 to select moves quickly
-- 🧠 **Smart AI** - Computer opponent with intelligent move selection
-- ⚡ **Fast Performance** - 24-hour caching for rapid responses
-- 📱 **Responsive Design** - Works on desktop, tablet, and mobile
-- 🧪 **Well Tested** - Comprehensive test suite with 95%+ coverage
+- **Turn-based Battles** - Classic 1v1 Pokémon battles
+- **Authentic Data** - Real stats, moves, and type effectiveness from PokéAPI
+- **Modern UI** - Beautiful responsive design with HP bars and sprites
+- **Keyboard Controls** - Press 1-4 to select moves quickly
+- **Smart AI** - Computer opponent with intelligent move selection
+- **Fast Performance** - 24-hour caching for rapid responses
+- **Responsive Design** - Works on desktop, tablet, and mobile
+- **Well Tested** - Comprehensive test suite with 95%+ coverage
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.11+
@@ -26,7 +26,7 @@ A turn-based Pokémon battle simulator built with FastAPI and React, featuring r
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/pokemon-battle-simulator.git
+git clone https://github.com/Khushankrawat/pokemon-battle-simulator.git
 cd pokemon-battle-simulator
 
 # Start both servers (recommended)
@@ -54,14 +54,14 @@ npm install
 npm run dev
 ```
 
-## 🎮 How to Play
+## How to Play
 
 1. **Start a Battle** - Enter a Pokémon name or click "Random" for a surprise battle
 2. **Choose Moves** - Select from 4 available moves by clicking or pressing 1-4
 3. **Watch the Action** - See damage calculations, type effectiveness, and battle animations
 4. **Win!** - Defeat your opponent by reducing their HP to zero
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 pokemon_battle_simulator/
@@ -85,7 +85,7 @@ pokemon_battle_simulator/
 └── README.md
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 - **FastAPI** - Modern, fast Python web framework
@@ -102,7 +102,7 @@ pokemon_battle_simulator/
 - **Zustand** - State management
 - **Axios** - HTTP client
 
-## 📋 API Endpoints
+## API Endpoints
 
 ### Start Battle
 ```bash
@@ -127,7 +127,7 @@ POST /api/session/{session_id}/action
 GET /api/pokemon/search?q=char&with_sprites=true
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Backend Tests
 ```bash
@@ -139,12 +139,12 @@ pytest tests/test_damage.py  # Specific file
 ```
 
 ### Test Coverage
-- ✅ Damage calculation tests
-- ✅ Type effectiveness tests
-- ✅ Battle engine tests
-- ✅ Move selection tests
+- Damage calculation tests
+- Type effectiveness tests
+- Battle engine tests
+- Move selection tests
 
-## ⚙️ Configuration
+## Configuration
 
 ### Backend
 The backend automatically caches PokéAPI responses for 24 hours to improve performance and reduce API calls.
@@ -155,7 +155,7 @@ Edit `frontend/src/api/client.ts` to change the API URL:
 const API_BASE_URL = 'http://localhost:8000'
 ```
 
-## 📊 Battle Mechanics
+## Battle Mechanics
 
 ### Damage Formula
 ```
@@ -175,7 +175,7 @@ Where:
 - **0.25x**: Hardly affects
 - **0x**: Immune (no damage)
 
-## 🚧 Development
+## Development
 
 ### Backend
 ```bash
@@ -194,7 +194,7 @@ npm run build        # Production build
 npm run preview      # Preview production
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Backend won't start
 - Ensure Python 3.11+ is installed
@@ -211,17 +211,17 @@ npm run preview      # Preview production
 - Clear browser cache if needed
 - Check network tab for failed requests
 
-## 📝 License
+## License
 
 MIT License - feel free to use this project for learning or as a starting point for your own.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [PokéAPI](https://pokeapi.co/) for providing free Pokémon data
 - Pokémon Company for creating the amazing franchise
 - All contributors and testers
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -233,4 +233,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-Made with ❤️ for Pokémon fans
+Made with love for Pokémon fans
