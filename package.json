@@ -1,0 +1,11 @@
+{
+  "name": "pokemon-battle-simulator",
+  "version": "1.0.0",
+  "description": "A turn-based Pokémon battle simulator",
+  "scripts": {
+    "start": "./start.sh",
+    "backend": "./start-backend.sh",
+    "frontend": "./start-frontend.sh"
+  }
+}
+
