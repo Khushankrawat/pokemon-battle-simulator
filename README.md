@@ -4,11 +4,7 @@ A turn-based Pokemon battle simulator built with FastAPI and React, featuring re
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue) ![React](https://img.shields.io/badge/React-18+-blue) ![FastAPI](https://img.shields.io/badge/FastAPI-Latest-green)
 
-## Demo
-
-[![Pokemon Battle Simulator Demo](https://i.imgur.com/placeholder.png)](https://imgur.com/a/zMpwbQk)
-
-> Demo hosted on Imgur: https://imgur.com/a/zMpwbQk
+![Pokemon Battle Simulator Demo](./demo.gif)
 
 ## Features
 
@@ -157,4 +153,87 @@ The backend automatically caches PokeAPI responses for 24 hours to improve perfo
 
 ### Frontend
 Edit `frontend/src/api/client.ts` to change the API URL:
+```typescript
+const API_BASE_URL = 'http://localhost:8000'
 ```
+
+## Battle Mechanics
+
+### Damage Formula
+```
+damage = (((2 × Level / 5 + 2) × Power × (Attack/Defense)) / 50 + 2) × STAB × TypeEffect × Random
+
+Where:
+- Level = 50 (fixed)
+- STAB = 1.5 if type matches, else 1.0
+- TypeEffect = 0.25, 0.5, 1.0, 2.0, or 4.0
+- Random = 0.85 to 1.0
+```
+
+### Type Effectiveness
+- 2x: Super effective
+- 1x: Normal effectiveness
+- 0.5x: Not very effective
+- 0.25x: Hardly affects
+- 0x: Immune (no damage)
+
+## Development
+
+### Backend
+```bash
+cd backend
+source venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8000
+```
+
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev          # Development
+npm run build        # Production build
+npm run preview      # Preview production
+```
+## Troubleshooting
+
+### Backend won't start
+- Ensure Python 3.11+ is installed
+- Virtual environment is activated
+- Dependencies are installed
+
+### Frontend won't connect
+- Check backend is running on port 8000
+- Verify CORS settings in backend
+- Check browser console for errors
+
+### Sprites not loading
+- Backend caches sprites for 24 hours
+- Clear browser cache if needed
+- Check network tab for failed requests
+
+## License
+
+MIT License - feel free to use this project for learning or as a starting point for your own.
+
+## Acknowledgments
+
+- [PokeAPI](https://pokeapi.co/) for providing free Pokemon data
+- Pokemon Company for creating the amazing franchise
+- All contributors and testers
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a Pull Request
+
+---
+
+Made with love for Pokemon fans
+
+
