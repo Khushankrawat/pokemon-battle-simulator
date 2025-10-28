@@ -11,7 +11,7 @@ interface BattleStore {
   reset: () => void
 }
 
-export const useBattleStore = create<BattleStore>((set) => ({
+export const useBattleStore = create<BattleStore>((set, get) => ({
   sessionId: null,
   player: null,
   opponent: null,
@@ -29,7 +29,9 @@ export const useBattleStore = create<BattleStore>((set) => ({
     },
   }),
   
-  updateSessionState: (state) => set({ sessionState: state }),
+  updateSessionState: (state) => {
+    set({ sessionState: state })
+  },
   
   reset: () => set({ sessionId: null, player: null, opponent: null, sessionState: null }),
 }))

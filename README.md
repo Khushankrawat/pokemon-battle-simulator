@@ -4,6 +4,12 @@ A turn-based Pokemon battle simulator built with FastAPI and React, featuring re
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue) ![React](https://img.shields.io/badge/React-18+-blue) ![FastAPI](https://img.shields.io/badge/FastAPI-Latest-green)
 
+## Demo
+
+![Pokemon Battle Simulator Demo](./demo.gif)
+
+*Note: Animated GIF showing the battle sequence with HP bars, attack animations, and move selection*
+
 ## Features
 
 - Turn-based Battles - Classic 1v1 Pokemon battles
