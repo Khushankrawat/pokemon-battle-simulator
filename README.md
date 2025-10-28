@@ -6,9 +6,14 @@ A turn-based Pokemon battle simulator built with FastAPI and React, featuring re
 
 ## Demo
 
-![Pokemon Battle Simulator Demo](./demo.gif)
+🎥 *Demo video/GIF coming soon - showcasing smooth HP animations, attack sequences, and real-time battle mechanics!*
 
-*Note: Animated GIF showing the battle sequence with HP bars, attack animations, and move selection*
+<!--
+To add your demo GIF:
+1. Upload to Imgur or another image hosting service
+2. Replace the markdown below with: ![Demo](your-link-here.gif)
+3. Or use YouTube link if you prefer video format
+-->
 
 ## Features
 
